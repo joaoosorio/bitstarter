@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>My First Bitstarter</title>
+    <title>Sports Betting Tracker</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
@@ -55,7 +55,7 @@
         font-size: 24px;
         line-height: 30px;
       }
-      p {
+      p, li{
         font-size: 18px;
         line-height: 24px;
       }
@@ -112,7 +112,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="#">Bitstarter</a>
+          <a class="brand" href="#">Sports Betting Tracker</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li class="active"><a href="#">Home</a></li>
@@ -149,25 +149,27 @@
         </div>
 
         <!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
-        <div class="span5 actions">
+        <div class="span5 actions" style="height: 300px">
           <div class="span8 offset2">
             <div class="statistics">
-              <div class="span4">
+              <div class="span6">
                 <!-- linediv-l and linediv-r give dividing lines that look
                 different in horizontal and vertical layouts, illustrating
                 media queries. -->
-                <div class="linediv-l">
-                <h3>1000</h3> <p>backers</p>
+                <div class="linediv-c">
+                <h3>0</h3> <p>backers</p>
                 </div>
               </div>
+<!--
               <div class="span4">
                 <div class="linediv-c">
                   <h3>$6000</h3> <p>of $10,000</p>
                 </div>
-              </div>
-              <div class="span4">
+			  </div>
+-->
+              <div class="span6">
                 <div class="linediv-r">
-                <h3>10</h3> <p>days left</p>
+                <h3>30</h3> <p>days left</p>
                 </div>
               </div>
             </div>
@@ -176,15 +178,17 @@
             <!-- Bootstrap progress bar -->
             <!-- http://twitter.github.io/bootstrap/components.html#progress -->
             <div class="thermometer progress active">
-              <div class="bar bar-success" style="width: 60%;"></div>
-              <div class="bar bar-warning" style="width: 40%;"></div>
+              <div class="bar bar-success" style="width: 1%;"></div>
+              <div class="bar bar-warning" style="width: 99%;"></div>
             </div>
           </div>
           <div class="span6 offset3 order">
             <!-- Standard Bootstrap button. -->
             <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
+<!--
             <button class="btn btn-success btn-large">Preorder</button>
-          </div>
+-->
+			</div>
           <div class="span8 offset2 social">
             <!-- Social buttons are not included in default Bootstrap. -->
             <!-- See: http://noizwaves.github.io/bootstrap-social-buttons -->
@@ -200,44 +204,41 @@
       <!-- http://placehold.it -->
       <div class="row-fluid section1">
         <div class="span5 offset1 asset">
-          <img class="img-polaroid" src="http://placehold.it/480x300">
+          <img class="img-polaroid" src="slip.jpg">
+          <img class="img-polaroid" src="flot.png">
         </div>
         <div class="span5 copy">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu
-            mollis justo velit at nunc. Fusce nec egestas sem. Donec
-            fringilla ante lectus, a pellentesque lacus dignissim ac. Sed
-            volutpat lorem ut congue malesuada. In facilisis scelerisque
-            turpis sed lacinia. Donec in orci lectus. Donec auctor semper
-            quam, eget rhoncus purus fringilla id. Phasellus id nibh eu
-            risus ultrices adipiscing.  Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Donec porta, dui sagittis hendrerit
-            rutrum, nunc leo tempus nisl, eu mollis justo velit at
-            nunc. Fusce nec egestas sem. Donec fringilla.
-          </p>
-        </div>
-      </div>
-
-      <div class="row-fluid section2">
-        <div class="span5 offset1 copy copy-right">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu
-            mollis justo velit at nunc. Fusce nec egestas sem. Donec
-            fringilla ante lectus, a pellentesque lacus dignissim ac. Sed
-            volutpat lorem ut congue malesuada. In facilisis scelerisque
-            turpis sed lacinia. Donec in orci lectus. Donec auctor semper
-            quam, eget rhoncus purus fringilla id. Phasellus id nibh eu
-            risus ultrices adipiscing.  Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Donec porta, dui sagittis hendrerit
-            rutrum, nunc leo tempus nisl, eu mollis justo velit at
-            nunc. Fusce nec egestas sem. Donec fringilla.
-          </p>
-        </div>
-        <div class="span5 asset">
-          <img class="img-polaroid" src="http://placehold.it/480x300">
-        </div>
+			<p>
+				As a sports betting trader, I always thought about having
+				an application to replace all the excel sheets that I use
+				to keep track of my betting activity.
+			</p>
+			<p>
+				With that in mind I designed <strong>Sports Betting Tracker</strong> 
+				to be an application that will have these initial features:
+			</p>
+			<ul>
+				<li>Record all bets in a database;</li>
+				<li>Catalog each bet through categories (Sport, Market, Strategy, Bet Type, etc.);</li>
+				<li>Dynamic management of categories;</li>
+				<li>Generate charts to easily visualize each strategy's evolution;</li>
+				<li>Generate reports to help understanding weakness and strengths of each strategy;</li>
+				<li>Accessible from any device, anywhere.</li>
+			</ul>
+			<p>
+				Right now I'm not looking for funding since I will be developing
+				this application for my own needs. However, I would like to know
+				if there are more people interested in this kind of application to
+				consider making it publicly available. 
+			<p/>
+			<p>
+				If you genuinely think that you would pay a small monthly fee to have 
+				access to an application like this, show your interest by clicking on 
+				the facebook or twitter	button.
+			</p>	
+				
+				
+		</div>
       </div>
 
       <!-- For the FAQ, we introduce a little bit of JS, using the accordion. -->
